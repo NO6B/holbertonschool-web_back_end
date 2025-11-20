@@ -1,4 +1,9 @@
 #!/usr/bin/env python3
+"""
+type-annotated function make_multiplier that takes
+a float multiplier as argument
+"""
+
 
 make_multiplier = __import__('8-make_multiplier').make_multiplier
 print(make_multiplier.__annotations__)
