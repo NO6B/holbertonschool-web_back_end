@@ -2,13 +2,14 @@
 """
 multiple coroutines at the same time with async
 """
-wait_random = __import__('0-basic_async_syntax').wait_random
-from typing import List
 import asyncio
+from typing import List
+wait_random = __import__('0-basic_async_syntax').wait_random
 
 
 async def wait_n(n: int, max_delay: int) -> List[float]:
-    """insert each delay at its correct position to keep the list sorted in ascending order"""
+    """insert each delay at its correct position to keep
+    the list sorted in ascending order"""
     tasks = []
     for i in range(n):
         tasks.append(wait_random(max_delay))
