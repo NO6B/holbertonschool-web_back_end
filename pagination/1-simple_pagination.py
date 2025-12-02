@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+"""
+Simple pagination
+"""
 import csv
 import math
 from typing import List
@@ -31,7 +34,9 @@ class Server:
         return self.__dataset
 
     def get_page(self, page: int = 1, page_size: int = 10) -> List[List]:
-        """get page method"""
+        """
+        get page method
+        """
         assert isinstance(page, int) and page > 0
         assert isinstance(page_size, int) and page_size > 0
 
