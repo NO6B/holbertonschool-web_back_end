@@ -1,4 +1,4 @@
 // add adress
-db.school.updateOne( { name: "Holberton school" },
+db.school.insertMany( { name: "Holberton school" },
     { $set: { address: "972 Mission street"}}
 )
