@@ -3,10 +3,10 @@ const app = http.createServer((request, response) => {
     response.writeHead(200, { 'Content-Type': 'text/plain' }); 
     
     if(response.url === '/'){
-        console.log('Hello Holberton School!')
+        response.end('Hello Holberton School!')
     }
     if(response.url === '/students'){
-        console.log('This is the list of our students')
+        response.end('This is the list of our students')
         countStudents('database.csv')
     }
 
